@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy as np
 
-filename = 'D:\\Программы\\ML\\image\\1.jpg'
+filename = '1.jpg'
 with Image.open(filename) as img:
     img.load()
 
