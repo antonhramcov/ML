@@ -11,10 +11,10 @@ gray_img = img.convert("L") #Перевод изображения в града
 
 matrix_gray_img = np.array(gray_img.getdata()).reshape(gray_img.size[0], gray_img.size[1]) # массив значений градаций серого для каждого пикселя, в формате строка/столбец
 
-new_matrix_gray_img = np.zeros((gray_img.size[0]*2,gray_img.size[1]), dtype=np.uint8)
+new_matrix_gray_img = np.zeros((gray_img.size[0]*2, gray_img.size[1]), dtype=np.uint8)
 j=0
 for i in range(0,len(new_matrix_gray_img),2):
-    new_matrix_gray_img[i] = matrix_img[j]
+    new_matrix_gray_img[i] = matrix_gray_img[j]
     j += 1
 
 
