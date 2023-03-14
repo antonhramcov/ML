@@ -19,5 +19,4 @@ for i in range(0,len(new_matrix_gray_img),2):
 
 
 
-
 #new_img = Image.fromarray(new_gray_img, mode='RGB')
